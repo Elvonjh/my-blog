@@ -2,18 +2,25 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+#头像
+avatar:
+
+#顶部图
+top_img:
+top_img_height: 100 #60-100
+
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: MY WORD
+subtitle: 'BUILDING'
+description: 'It will be a great world'
 keywords:
-author: John Doe
+author: NJH
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://elvonjh.github.io/my-blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -40,7 +47,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -101,4 +108,13 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/Elvonjh/Elvonjh.github.io.git
+  branch: master
+
+
+#文章后的二维码
+QR_code:
+  - itemlist:
+    img:
+    text:微信
