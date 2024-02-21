@@ -10,18 +10,18 @@ top_img:
 top_img_height: 100 #60-100
 
 # Site
-title: MY WORD
+title: MY WORLD
 subtitle: 'BUILDING'
-description: 'It will be a great world'
+description: 'LESS IS MORE'
 keywords:
 author: NJH
-language: en
-timezone: ''
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://elvonjh.github.io/my-blog/
-permalink: :year/:month/:day/:title/
+permalink: title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -103,7 +103,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: shoka
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
