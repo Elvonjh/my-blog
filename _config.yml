@@ -117,4 +117,4 @@ deploy:
 QR_code:
   - itemlist:
     img:
-    text:微信
+    text: 微信
