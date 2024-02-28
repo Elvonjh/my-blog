@@ -109,7 +109,7 @@ theme: shoka
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/Elvonjh/Elvonjh.github.io.git
+  repository: https://github.com/Elvonjh/my-blog.git
   branch: master
 
 
