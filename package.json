@@ -29,6 +29,6 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-shokax": "^0.4.2",
-    "utf-8-validate": "^5.0.10"
+    "utf-8-validate": "^6.0.3"
   }
 }
