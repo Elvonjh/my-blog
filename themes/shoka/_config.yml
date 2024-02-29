@@ -86,7 +86,8 @@ font:
 
 # project of https://www.iconfont.cn/
 # //at.alicdn.com/t/font_1832207_c8i9n1ulxlt.css => 1832207_c8i9n1ulxlt
-iconfont: "1832207_igi8uaupcus"
+#iconfont: "1832207_igi8uaupcus"
+menu:
   home: / || home
   about: /about/ || user
   posts:
@@ -152,7 +153,7 @@ reward:
   enable: true
   account:
     wechatpay: /wechatpay.jpg
-#    alipay: /alipay.png
+#    alipay: /alipay.png wechatpay.jpg
  #   paypal: /paypal.png
 
 # TagCloud settings for tags page.
