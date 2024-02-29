@@ -2,9 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://elvonjh.github.io/my-blog</id>
     <title>MY WORLD</title>
+    <subtitle>BUILDING</subtitle>
+    <icon>https://elvonjh.github.io/my-blog/images/favicon.ico</icon>
     <link href="https://elvonjh.github.io/my-blog" />
+    <author>
+      <name>NJH</name>
+    </author>
     <updated>2024-02-20T16:00:00.000Z</updated>
-    <category term="java" />
     <entry>
         <id>https://elvonjh.github.io/my-blog/title/</id>
         <title>Hello World</title>
@@ -24,7 +28,8 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="java" />
+        <category term="笔记" scheme="https://elvonjh.github.io/my-blog/categories/%E7%AC%94%E8%AE%B0/" />
+        <category term="java" scheme="https://elvonjh.github.io/my-blog/tags/java/" />
         <updated>2024-02-20T16:00:00.000Z</updated>
     </entry>
 </feed>
