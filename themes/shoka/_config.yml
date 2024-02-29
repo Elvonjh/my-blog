@@ -1,5 +1,5 @@
 # Alternate site name
-alternate: Yume Shoka
+alternate: Utopia
 
 open_graph:
   #twitter_id:
@@ -87,8 +87,6 @@ font:
 # project of https://www.iconfont.cn/
 # //at.alicdn.com/t/font_1832207_c8i9n1ulxlt.css => 1832207_c8i9n1ulxlt
 iconfont: "1832207_igi8uaupcus"
-
-menu:
   home: / || home
   about: /about/ || user
   posts:
@@ -153,9 +151,9 @@ reward:
   # If true, reward will be displayed in every article by default.
   enable: true
   account:
-    wechatpay: /wechatpay.png
-    alipay: /alipay.png
-    paypal: /paypal.png
+    wechatpay: /wechatpay.jpg
+#    alipay: /alipay.png
+ #   paypal: /paypal.png
 
 # TagCloud settings for tags page.
 tagcloud:
@@ -301,3 +299,61 @@ vendors:
     valine: gh/amehime/MiniValine@4.2.2-beta10/dist/MiniValine.min.js
     copy_tex: npm/katex@0.12.0/dist/contrib/copy-tex.min.js
     chart: npm/frappe-charts@1.5.0/dist/frappe-charts.min.iife.min.js
+
+markdown:
+  render: # 渲染器设置
+    html: false # 过滤 HTML 标签
+    xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
+    breaks: true # 转换段落里的 '\n' 到 <br>。
+    linkify: true # 将类似 URL 的文本自动转换为链接。
+    typographer: 
+    quotes: '“”‘’'
+  plugins: # markdown-it 插件设置
+    - plugin:
+        name: markdown-it-toc-and-anchor
+        enable: true
+        options: # 文章目录以及锚点应用的 class 名称，shoka 主题必须设置成这样
+          tocClassName: 'toc'
+          anchorClassName: 'anchor'
+    - plugin:
+        name: markdown-it-multimd-table
+        enable: true
+        options:
+          multiline: true
+          rowspan: true
+          headerless: true
+    - plugin:
+        name: ./markdown-it-furigana
+        enable: true
+        options:
+          fallbackParens: "()"
+    - plugin:
+        name: ./markdown-it-spoiler
+        enable: true
+        options:
+          title: "你知道得太多了"
+
+minify:
+  html:
+    enable: true
+    exclude: # 排除 hexo-feed 用到的模板文件
+      - '**/json.ejs'
+      - '**/atom.ejs'
+      - '**/rss.ejs'
+  css:
+    enable: true
+    exclude:
+      - '**/*.min.css'
+  js:
+    enable: true
+    mangle:
+      toplevel: true
+    output:
+    compress:
+    exclude:
+      - '**/*.min.js'
+      
+highlight:
+  enable: false
+prismjs:
+  enable: false
