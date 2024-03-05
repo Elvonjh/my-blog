@@ -5,10 +5,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.language if page.language else config.language }}">
 <head>
-  <meta name="referrer" content="no-referrer" />
   {{ partial('_partials/head/head.njk', {}, {cache: true}) }}
   {{ partial('_partials/head/head_unique.njk') }}
   <title>{% block title %}{% endblock %}{{ alternate + " = " if alternate }}{{ title }}{{ " = "+subtitle if subtitle }}</title>
+  <meta name="referrer" content="no-referrer" />
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
